@@ -1,0 +1,195 @@
+@import "variables";
+
+.survey-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.question-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main-container {
+    width: 40em;
+    height: 20em;
+    padding: 4em;
+    box-shadow: $box-shadow;
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    position: relative;
+
+    .question-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      .footer {
+        position: absolute;
+        bottom: 1em;
+        left: 4em;
+        right: 4em;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 2em;
+
+        img {
+          width: 4em;
+        }
+      }
+      .question {
+        font-weight: bold;
+      }
+    }
+    .header {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 10em;
+      }
+    }
+
+    .choices-container {
+      display: flex;
+      align-items: center;
+      gap: 0.6em;
+      width: 90%;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+
+      .choices {
+        border: 1px $green solid;
+        border-radius: 0.4em;
+        color: $green;
+        padding: 0.6em;
+        transition: $before;
+
+        &:hover {
+          color: white;
+          background-color: $green;
+          transform: $hover;
+        }
+      }
+    }
+
+    .specified-answer {
+      input {
+        background-color: none;
+        border: none;
+        border-bottom: solid 1px $green;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .proceed-container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      .primary-btn {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.message-container {
+  width: 40em;
+  height: 20em;
+  padding: 4em;
+  box-shadow: $box-shadow;
+  border-radius: 2em;
+  background-color: white;
+  display: flex;
+  gap: 1em;
+  position: relative;
+  padding-bottom: 5em;
+
+  img {
+    width: 20em;
+  }
+
+  .heading {
+    font-weight: bolder;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+
+      .green {
+        color: $green;
+      }
+    }
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex-grow: 1;
+  }
+
+  .message-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .footer {
+    position: absolute;
+    bottom: 1em;
+    left: 4em;
+    right: 4em;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+
+    img {
+      width: 4em;
+    }
+  }
+}
+
+.primary-btn {
+  font-size: 1em;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.questionpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 40em;
+    .button-container {
+      width: 40em;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.primarybtn-link {
+  text-decoration: none;
+}

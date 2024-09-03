@@ -1,0 +1,492 @@
+@import "Variables.scss";
+
+.form-container {
+  background-color: white;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4em;
+  border-radius: 1.25em;
+  padding: 3em;
+  margin: 2em;
+
+  .logo-container {
+    width: 8em;
+    height: 3em;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .form-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .heading {
+      font-weight: bolder;
+      font-size: 1.25em;
+      margin: 0;
+    }
+
+    .subheading {
+      font-size: 0.8em;
+    }
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    .button-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .otp-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .otp-number {
+      border: 1px $input-border solid;
+      border-radius: 0.4em;
+      width: 2.6em;
+      height: 3em;
+      text-align: center;
+      font-size: 1em;
+      padding: 0;
+    }
+  }
+
+  .input-field {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .input-field:focus {
+    outline: none;
+  }
+
+  .primarybtn {
+    border: none;
+    color: white;
+    background-color: $darkgreen;
+    padding: 0.6em 2em;
+    border-radius: 0.4em;
+    transition: transform 0.3s ease;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+    width: 100%;
+
+    .primarybtn-link {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: lightgray;
+      }
+    }
+  }
+
+  .primarybtn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .secondarybtn {
+    border: none;
+    padding: 0.4em;
+    border-radius: 0.4em;
+    color: $heading;
+    transition: transform 0.3s ease;
+
+    .secondarybtn-link {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .secondarybtn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .input-main-container {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+
+    .action a {
+      color: $green;
+      text-decoration: none;
+    }
+  }
+  .name-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 0.6em;
+  }
+
+  .input-container {
+    display: flex;
+    border: 1px solid $input-border;
+    height: fit-content;
+    color: $input-text;
+    gap: 0.6em;
+    align-items: center;
+    padding: 0.4em 1em 0.4em 1.2em;
+    border-radius: 0.4em;
+    width: 100%;
+    box-sizing: border-box;
+
+    .icon-container {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      svg {
+        font-size: 1.2em;
+        margin: 0;
+      }
+    }
+  }
+
+  .validation {
+    color: $warning;
+    font-size: 0.8em;
+    background-color: #dc354648;
+    text-align: center;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+    padding: 0.4em 1em 0.4em 1.2em;
+    border: 1px solid $input-border;
+    box-sizing: border-box;
+  }
+}
+
+.hero {
+  width: 30em;
+  height: 60em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-items: end;
+  margin: 0;
+  padding: 0;
+
+  .product-card-chart {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.8em;
+    font-size: 1em;
+    transition: transform 0.3s ease;
+
+    .graph-title {
+      font-weight: 600;
+    }
+
+    .legend-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      margin-top: 1em;
+
+      .legend-label {
+        font-size: 0.9em;
+      }
+
+      .legend2,
+      .legend3,
+      .legend1 {
+        width: 2em;
+        height: 1em;
+        border-radius: 0.2em;
+      }
+
+      .legend2 {
+        background-color: $darkgreen;
+      }
+
+      .legend3 {
+        background-color: $brightgreen;
+      }
+
+      .legend1 {
+        background-color: $green;
+      }
+    }
+
+    .bars {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 1em;
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 20em;
+        height: 1em;
+        border-radius: 0.2em;
+      }
+
+      .bar1 {
+        background-color: $darkgreen;
+        height: 1.2em;
+      }
+
+      .bar2 {
+        background-color: $green;
+      }
+
+      .bar3 {
+        background-color: $brightgreen;
+      }
+    }
+  }
+
+  .product-card {
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 0.8em;
+    border-radius: 0.8em;
+    margin-top: 12em;
+
+    .product-container {
+      width: 14em;
+      height: 14em;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.8em;
+      }
+    }
+
+    .card-details {
+      padding-top: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .product-details {
+        display: flex;
+        flex-direction: column;
+
+        .prod-name {
+          font-size: 1em;
+        }
+        .prod-price {
+          font-size: 1.2em;
+          font-weight: 600;
+        }
+      }
+
+      .status-btn {
+        font-size: 0.8em;
+        color: white;
+        background-color: $green;
+        border: none;
+        border-radius: 0.4em;
+        padding: 0.4em;
+        display: flex;
+        gap: 0.4em;
+        align-items: center;
+        box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .image-card1,
+  .image-card2 {
+    transition: transform 0.3s ease;
+
+    padding: 0;
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+  }
+
+  .stats-card {
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    width: 14em;
+    height: 18em;
+    padding: 1em;
+    border-radius: 0.8em;
+    color: white;
+    background-color: $darkgreen;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .percentage {
+      font-size: 3em;
+    }
+  }
+  .partner-services {
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.8em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    margin-top: 24em;
+
+    p {
+      font-weight: bold;
+    }
+
+    .logos-container {
+      img {
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        margin-right: -10px;
+      }
+    }
+  }
+
+  .image-card1 {
+    width: 16em;
+    height: 20em;
+    transition: transform 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.8em;
+    }
+  }
+  .image-card3 {
+    width: 18em;
+    height: 12em;
+    margin-top: 30em;
+    transition: transform 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.8em;
+    }
+  }
+
+  .image-card2 {
+    height: 12em;
+    transition: transform 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 0 0 0.8em;
+    }
+  }
+
+  .product-table {
+    transition: transform 0.3s ease;
+    background-color: white;
+    width: fit-content;
+    border-radius: 0.8em;
+    padding: 1em;
+    margin-top: 18em;
+    transition: transform 0.3s ease;
+
+    table {
+      border-spacing: 1em;
+
+      thead {
+        border-bottom: solid 1px rgb(179, 179, 179);
+
+        th {
+          border-bottom: solid 1px gray;
+        }
+      }
+
+      th {
+        text-align: left;
+      }
+
+      td {
+        width: 5em;
+
+        .table-img {
+          width: 4em;
+          height: 4em;
+          margin-bottom: 0.5em;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.4em;
+          }
+        }
+      }
+
+      td.price {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .image-card1:hover,
+  .stats-card:hover,
+  .partner-services:hover,
+  .image-card3:hover,
+  .product-table:hover,
+  .stats-card:hover,
+  .product-card:hover,
+  .product-card-chart:hover {
+    transform: scale(1.08);
+  }
+}
+.formpage {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .form-div,
+  .form-hero {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,170 @@
+.survey-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.question-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question-card .main-container {
+  width: 40em;
+  height: 20em;
+  padding: 4em;
+  box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+  border-radius: 1em;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  position: relative;
+}
+.question-card .main-container .question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.question-card .main-container .question-container .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 4em;
+  right: 4em;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2em;
+}
+.question-card .main-container .question-container .footer img {
+  width: 4em;
+}
+.question-card .main-container .question-container .question {
+  font-weight: bold;
+}
+.question-card .main-container .header {
+  display: flex;
+  align-items: center;
+}
+.question-card .main-container .header img {
+  width: 10em;
+}
+.question-card .main-container .choices-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.question-card .main-container .choices-container .choices {
+  border: 1px #058c42 solid;
+  border-radius: 0.4em;
+  color: #058c42;
+  padding: 0.6em;
+  transition: transform 0.3s ease;
+}
+.question-card .main-container .choices-container .choices:hover {
+  color: white;
+  background-color: #058c42;
+  transform: scale(0.96);
+}
+.question-card .main-container .specified-answer input {
+  background-color: none;
+  border: none;
+  border-bottom: solid 1px #058c42;
+}
+.question-card .main-container .specified-answer input:focus {
+  outline: none;
+}
+.question-card .main-container .proceed-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.question-card .main-container .proceed-container .primary-btn {
+  align-self: flex-end;
+}
+
+.message-container {
+  width: 40em;
+  height: 20em;
+  padding: 4em;
+  box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+  background-color: white;
+  display: flex;
+  gap: 1em;
+  position: relative;
+  padding-bottom: 5em;
+}
+.message-container img {
+  width: 20em;
+}
+.message-container .heading {
+  font-weight: bolder;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+}
+.message-container .heading p {
+  margin: 0;
+}
+.message-container .heading p .green {
+  color: #058c42;
+}
+.message-container .message {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex-grow: 1;
+}
+.message-container .message-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.message-container .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 4em;
+  right: 4em;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2em;
+}
+.message-container .footer img {
+  width: 4em;
+}
+
+.primary-btn {
+  font-size: 1em;
+  text-decoration: none;
+}
+.primary-btn:focus {
+  outline: none;
+}
+
+.questionpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.questionpage .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 40em;
+}
+.questionpage .card-wrapper .button-container {
+  width: 40em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primarybtn-link {
+  text-decoration: none;
+}
