@@ -1,0 +1,36 @@
+@import "variables";
+
+footer {
+  background-color: $green;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+
+  .socials {
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .pages {
+    display: flex;
+    color: white;
+    gap: 4em;
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    background-color: $darkgreen;
+    padding: 1em 0em;
+    color: white;
+  }
+}

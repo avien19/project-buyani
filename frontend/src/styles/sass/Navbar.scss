@@ -1,0 +1,157 @@
+@import "variables";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $bg-light;
+
+  .menu {
+    .menu-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: baseline;
+      gap: 2em;
+
+      .menu-logo img {
+        height: 2.2em;
+        width: 5.2em;
+      }
+
+      .menu-item {
+        margin: 0;
+
+        &:hover {
+          color: $green;
+        }
+
+        select {
+          padding: 0.5em;
+          border: none;
+          outline: none;
+          font-size: 1em;
+          background-color: transparent;
+
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+
+  .button-container {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+
+    .signup,
+    .login {
+      border: none;
+      padding: 0.4em 1em;
+      border-radius: 0.6em;
+      box-shadow: $box-shadow;
+      transition: $before;
+      font-size: 1em;
+    }
+
+    .signup {
+      background-color: white;
+
+      &:hover {
+        transform: $hover;
+      }
+    }
+
+    .login {
+      background-color: $green;
+      color: white;
+
+      &:hover {
+        transform: $hover;
+      }
+    }
+
+    .search-container {
+      align-items: center;
+      display: flex;
+      padding: 0.4em 1em;
+      gap: 0.4em;
+      background-color: $light-gray;
+      border-radius: 1em;
+
+      .search-icon {
+        font-size: 1.4em;
+        color: $input-text;
+      }
+      input {
+        border: none;
+        background-color: transparent;
+      }
+
+      input:focus {
+        outline: none;
+      }
+    }
+
+    .graph-button {
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      width: 2.2em;
+      height: 2.2em;
+      justify-content: center;
+
+      .graph-icon {
+        font-size: 1.4em;
+        color: $green;
+      }
+    }
+    .bayong-button {
+      background-color: $green;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      width: 2.2em;
+      height: 2.2em;
+      justify-content: center;
+
+      .bayong-icon {
+        font-size: 1.4em;
+        color: $white;
+      }
+    }
+
+    .profile-container {
+      border-radius: 50%;
+      width: 2.2em;
+      height: 2.2em;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}

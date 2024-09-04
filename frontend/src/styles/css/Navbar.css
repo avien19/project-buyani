@@ -1,0 +1,133 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+nav .menu .menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 2em;
+}
+nav .menu .menu-list .menu-logo img {
+  height: 2.2em;
+  width: 5.2em;
+}
+nav .menu .menu-list .menu-item {
+  margin: 0;
+}
+nav .menu .menu-list .menu-item:hover {
+  color: #058c42;
+}
+nav .menu .menu-list .menu-item select {
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background-color: transparent;
+}
+nav .menu .menu-list .menu-item select:hover {
+  color: #058c42;
+}
+nav .button-container {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+nav .button-container .signup,
+nav .button-container .login {
+  border: none;
+  padding: 0.4em 1em;
+  border-radius: 0.6em;
+  box-shadow: 0 30px 45px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  font-size: 1em;
+}
+nav .button-container .signup {
+  background-color: white;
+}
+nav .button-container .signup:hover {
+  transform: scale(0.96);
+}
+nav .button-container .login {
+  background-color: #058c42;
+  color: white;
+}
+nav .button-container .login:hover {
+  transform: scale(0.96);
+}
+nav .button-container .search-container {
+  align-items: center;
+  display: flex;
+  padding: 0.4em 1em;
+  gap: 0.4em;
+  background-color: #eaeaea;
+  border-radius: 1em;
+}
+nav .button-container .search-container .search-icon {
+  font-size: 1.4em;
+  color: #828282;
+}
+nav .button-container .search-container input {
+  border: none;
+  background-color: transparent;
+}
+nav .button-container .search-container input:focus {
+  outline: none;
+}
+nav .button-container .graph-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+  justify-content: center;
+}
+nav .button-container .graph-button .graph-icon {
+  font-size: 1.4em;
+  color: #058c42;
+}
+nav .button-container .bayong-button {
+  background-color: #058c42;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+  justify-content: center;
+}
+nav .button-container .bayong-button .bayong-icon {
+  font-size: 1.4em;
+  color: white;
+}
+nav .button-container .profile-container {
+  border-radius: 50%;
+  width: 2.2em;
+  height: 2.2em;
+}
+nav .button-container .profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
