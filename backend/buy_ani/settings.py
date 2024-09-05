@@ -81,12 +81,14 @@ WSGI_APPLICATION = 'buy_ani.wsgi.application'
 # EMAIL
 # email = work.elipaul@gmail.com
 # app-password = fmqp bvqf ijae iffs
+
+# PLEASE CONFIGURE THE DATABASE CREDENTIALS BASE ON YOUR LOCAL DATABASE
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'BuyAni',
         'USER': 'postgres',
-        'PASSWORD': '4321',
+        'PASSWORD': 'buyani',
         'HOST': 'localhost'
     }
 }
@@ -141,6 +143,9 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
